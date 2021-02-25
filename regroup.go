@@ -42,6 +42,10 @@ func MustCompile(expr string) *ReGroup {
 	return reGroup
 }
 
+func (r *ReGroup) GetMatcher() *regexp.Regexp {
+	return r.matcher
+}
+
 // matchGroupMap convert match string array into a map of group key to group value
 func (r *ReGroup) matchGroupMap(match []string) map[string]string {
 	ret := make(map[string]string)
