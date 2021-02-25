@@ -1,4 +1,4 @@
-module github.com/oriser/regroup
+module github.com/michael2008/regroup
 
 go 1.14
 
